@@ -1,0 +1,452 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <link href="css/style.css" rel="stylesheet">
+
+
+<head>
+    <meta charset="utf-8">
+    <title>iDESIGN SUPERIOR FINISHES LTD</title> <!-- Company Name updated -->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/interior.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    
+/* Project Section Styling */
+.project-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image Resizing */
+.project-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Overlay Styling */
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.4s ease;
+    text-decoration: none;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+/* Overlay Text */
+.project-overlay h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.project-overlay span {
+    font-size: 14px;
+}
+
+/* Section Title Styling */
+.section-title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-item img {
+        height: 200px;
+    }
+
+    .project-overlay h4 {
+        font-size: 18px;
+    }
+
+    .project-overlay span {
+        font-size: 13px;
+    }
+}
+</style>
+
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white pr-3" href="">FAQs</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white px-3" href="">Help</a>
+                        <span class="text-white">|</span>
+                        <a class="text-white pl-3" href="">Support</a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-white px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-white pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container position-relative" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 display-5 text-white"><span class="text-primary">i</span>DESIGN SUPERIOR FINISHES LTD</h1> <!-- Company Name updated -->
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                                <a href="single.html" class="dropdown-item">Blog Detail</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Under Nav Start -->
+    <div class="container-fluid bg-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-left mb-3 mb-lg-0">
+                    <div class="d-inline-flex text-left">
+                        <h1 class="flaticon-office font-weight-normal text-primary m-0 mr-3"></h1>
+                        <div class="d-flex flex-column">
+                            <h5>Our Office</h5>
+                            <p class="m-0">Kisii, Kenya</p> <!-- Location updated -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-left text-lg-center mb-3 mb-lg-0">
+                    <div class="d-inline-flex text-left">
+                        <h1 class="flaticon-email font-weight-normal text-primary m-0 mr-3"></h1>
+                        <div class="d-flex flex-column">
+                            <h5>Email Us</h5>
+                            <p class="m-0">Patrickmisiani2000@gmail.com</p> <!-- Email updated -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-left text-lg-right mb-3 mb-lg-0">
+                    <div class="d-inline-flex text-left">
+                        <h1 class="flaticon-telephone font-weight-normal text-primary m-0 mr-3"></h1>
+                        <div class="d-flex flex-column">
+                            <h5>Call Us</h5>
+                            <p class="m-0">0748382621</p> <!-- Phone updated -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Under Nav End -->
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-secondary py-5">
+        <div class="container py-5">
+            <div class="row align-items-center py-4">
+                <div class="col-md-6 text-center text-md-left">
+                    <h1 class="mb-4 mb-md-0 text-primary text-uppercase">Blog Detail</h1>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="btn btn-outline-primary" href="">Home</a>
+                        <i class="fas fa-angle-double-right text-primary mx-2"></i>
+                        <a class="btn btn-outline-primary disabled" href="">Blog Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header Start -->
+
+
+    <!-- Projects Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="mb-4 text-center section-title">Our Featured Projects in Kenya</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="kisumu.jpg" alt="Kisumu Project">
+                    <a class="project-overlay" href="">
+                        <h4 class="text-white">Modern Home Interior - Kisumu</h4>
+                        <span class="text-white">Complete living room and kitchen redesign with African-inspired themes in Milimani, Kisumu.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="nairobi.jpg" alt="Nairobi Project">
+                    <a class="project-overlay" href="">
+                        <h4 class="text-white">Corporate Office Renovation - Nairobi</h4>
+                        <span class="text-white">Sleek, modern office design for a tech startup in Westlands, Nairobi.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="nyamira.jpg" alt="Nyamira Project">
+                    <a class="project-overlay" href="">
+                        <h4 class="text-white">Custom Kitchen Remodel - Nyamira</h4>
+                        <span class="text-white">Space-saving cabinetry, tiled backsplash, and lighting upgrades in a rural Nyamira home.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="mombasa.jpg" alt="Mombasa Project">
+                    <a class="project-overlay" href="">
+                        <h4 class="text-white">Beach Villa Interior - Mombasa</h4>
+                        <span class="text-white">Coastal-inspired interior with airy, oceanic tones for a beach property in Nyali.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="eldoret.jpg" alt="Eldoret Project">
+                    <a class="project-overlay" href="">
+                        <h4 class="text-white">Smart Bedroom Design - Eldoret</h4>
+                        <span class="text-white">Youth room transformation with smart lighting, modular furniture, and built-in closets.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="nakuru.jpg" alt="Nakuru Project">
+                    <a class="project-overlay" href="">
+                        <h4 class="text-white">Classic Dining Room - Nakuru</h4>
+                        <span class="text-white">Vintage and rustic styled dining room setup with local artwork and warm textures.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
+
+                <!-- Projects Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <h1 class="mb-4 text-center section-title">Our Featured Projects in Kisii, Kenya</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="home1.jpg" alt="Luxury Home Kisii">
+                    <a class="project-overlay" href="#">
+                        <h4 class="text-white">Luxury Residential Interior</h4>
+                        <span class="text-white">Elegant living room and master suite design in Kisii Town with premium finishes and lighting.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="office.jpg" alt="Office Kisii">
+                    <a class="project-overlay" href="#">
+                        <h4 class="text-white">Modern Office Setup</h4>
+                        <span class="text-white">Full renovation of a law firm's office space in Kisii CBD with ergonomic furniture and smart lighting.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="kitchen.jpg" alt="Kitchen Kisii">
+                    <a class="project-overlay" href="#">
+                        <h4 class="text-white">Contemporary Kitchen Design</h4>
+                        <span class="text-white">Modular kitchen design with granite countertops and customized storage solutions in Nyanchwa Estate.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="hotel.jpg" alt="Hotel Kisii">
+                    <a class="project-overlay" href="#">
+                        <h4 class="text-white">Hotel Lobby Transformation</h4>
+                        <span class="text-white">Redesigned hotel reception and lounge in Suneka, Kisii with a modern Afro-fusion theme.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="bedroom.jpg" alt="Bedroom Kisii">
+                    <a class="project-overlay" href="#">
+                        <h4 class="text-white">Minimalist Bedroom Upgrade</h4>
+                        <span class="text-white">Calm, minimalist bedroom with built-in wardrobes and textured feature walls in Kisii's Jogoo area.</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="project-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="school.jpg" alt="School Project Kisii">
+                    <a class="project-overlay" href="#">
+                        <h4 class="text-white">School Reception & Staff Room</h4>
+                        <span class="text-white">Functional and stylish redesign of a private school's reception area and staff lounge in Kisii Central.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
+
+            <div class="col-lg-3 col-md-6 mb-5">
+    <h4 class="text-primary mb-4">Newsletter</h4>
+    <form id="whatsappForm">
+        <div class="form-group">
+            <input type="text" class="form-control border-0" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control border-0" id="email" placeholder="Your Email" required />
+        </div>
+        <div>
+            <button class="btn btn-lg btn-primary btn-block border-0" type="submit">Submit Now</button>
+        </div>
+    </form>
+</div>
+
+                </form>
+            </div>
+        </div>
+        <div class="container border-top border-secondary pt-5">
+            <p class="m-0 text-center text-white">
+                &copy;2022 <a class="text-white font-weight-bold" href="#">iDESIGN SUPERIOR FINISHES LTD</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="#">Desmond Mabuka</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+<script>
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+        e.preventDefault(); // prevent actual form submission
+
+        var name = document.getElementById("name").value.trim();
+        var email = document.getElementById("email").value.trim();
+
+        var message = `Hello, my name is ${name}. I'd like to subscribe to your newsletter. My email is ${email}.`;
+
+        var phoneNumber = "254748382621"; // Converted to international format (Kenya)
+
+        var whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappURL, '_blank');
+    });
+</script>
+
+
+</html>

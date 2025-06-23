@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help - iDesign Superior Finishes Ltd</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f6f1;
+      color: #333;
+    }
+
+    header {
+      background-color: #6c4d2c;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .help-section {
+      padding: 40px 20px;
+    }
+
+    .help-section h2 {
+      color: #6c4d2c;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .help-topics {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .help-topics .card {
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .help-topics .card-header {
+      background-color: #c49b63;
+      color: white;
+      font-weight: bold;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #c49b63;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 15px;
+      font-size: 0.9rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25D366;
+      color: white;
+      font-size: 24px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .whatsapp-float a:hover {
+      background-color: #1ebc5b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>iDesign Superior Finishes Ltd</h1>
+    <p>Need Help? We’re here to support your design journey</p>
+  </header>
+
+  <!-- Help Topics -->
+  <section class="help-section">
+    <h2>How Can We Help You?</h2>
+    <div class="help-topics">
+      <div class="card">
+        <div class="card-header">Booking a Consultation</div>
+        <div class="card-body">
+          Learn how to schedule a free 30-minute consultation with our expert designers.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Service Areas</div>
+        <div class="card-body">
+          We serve clients in Kisii, Nairobi, Eldoret, and across Kenya. Contact us for custom locations.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Payment & Quotes</div>
+        <div class="card-body">
+          Get information on how we quote and the payment options we offer including M-Pesa and bank transfer.
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-form">
+            <h4>Send Us a Message</h4>
+            <form onsubmit="sendToWhatsApp(); return false;">
+
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" required/>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" class="form-control" rows="4" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Contact Us</h5>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Kisii County, Kenya</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>0748 382 621</p>
+        <p><i class="fa fa-envelope mr-2"></i>patrickmisiani2000@gmail.com</p>
+      </div>
+      <div class="col-md-6 text-md-right">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="service.html">Services</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom mt-3">
+      &copy; 2025 iDesign Superior Finishes Ltd. Designed by Desmond Mabuka
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/254748382621?text=Hello%20iDesign%20team%2C%20I%20need%20assistance." target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+</body>
+<script>
+  function sendToWhatsApp() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    const phone = "254748382621"; // WhatsApp number (no + or spaces)
+    const text = `Hello iDesign,%0AMy name is ${name}.%0AEmail: ${email}%0AMessage: ${message}`;
+    const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+
+    window.open(whatsappURL, "_blank");
+  }
+</script>
+
+</html>

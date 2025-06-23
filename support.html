@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support - iDesign Superior Finishes Ltd</title>
+  <!-- Bootstrap & Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f3ef;
+    }
+
+    header {
+      background-color: #6c4d2c;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .support-section {
+      padding: 60px 20px;
+    }
+
+    .support-section h2 {
+      color: #6c4d2c;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .form-control {
+      border-radius: 0;
+      border: 1px solid #ccc;
+    }
+
+    .btn-primary {
+      background-color: #c49b63;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #b38749;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 40px 0 10px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #c49b63;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      background-color: #343a40;
+      color: #ccc;
+      padding: 15px;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    .whatsapp-float a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #25D366;
+      color: white;
+      font-size: 24px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .whatsapp-float a:hover {
+      background-color: #1ebc5b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Support Center</h1>
+    <p>How can we assist you at iDesign Superior Finishes Ltd?</p>
+  </header>
+
+  <section class="support-section container">
+    <h2>Contact Support</h2>
+    <form onsubmit="sendSupportToWhatsApp(); return false;">
+      <div class="form-group">
+        <label for="support-name">Your Name</label>
+        <input type="text" id="support-name" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="support-email">Your Email</label>
+        <input type="email" id="support-email" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="support-message">Message</label>
+        <textarea id="support-message" rows="5" class="form-control" placeholder="Describe your issue or question..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit to WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Contact Info</h5>
+          <p><i class="fas fa-map-marker-alt mr-2"></i> Kisii, Kenya</p>
+          <p><i class="fas fa-phone-alt mr-2"></i> 0748 382 621</p>
+          <p><i class="fas fa-envelope mr-2"></i> patrickmisiani2000@gmail.com</p>
+        </div>
+        <div class="col-md-6">
+          <h5>Company</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Our Services</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 iDesign Superior Finishes Ltd. Designed by Desmond Mabuka
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/254748382621?text=Hello%2C%20I%20need%20support%20from%20iDesign." target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function sendSupportToWhatsApp() {
+      const name = document.getElementById("support-name").value.trim();
+      const email = document.getElementById("support-email").value.trim();
+      const message = document.getElementById("support-message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      const phone = "254748382621";
+      const text = `Hello iDesign Support,%0AMy name is ${name}.%0AEmail: ${email}%0AMessage: ${message}`;
+      const whatsappURL = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
